@@ -22,6 +22,8 @@
 		4E64BF3319363D24000E268E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E64BF1219363D24000E268E /* UIKit.framework */; };
 		4E64BF3B19363D24000E268E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E64BF3919363D24000E268E /* InfoPlist.strings */; };
 		4E64BF3D19363D24000E268E /* YLPullToLoadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E64BF3C19363D24000E268E /* YLPullToLoadDemoTests.m */; };
+		4EBD12EF1937864A00149034 /* UIScrollView+PullToLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD12EE1937864A00149034 /* UIScrollView+PullToLoad.m */; };
+		4EBD12F01937864A00149034 /* UIScrollView+PullToLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD12EE1937864A00149034 /* UIScrollView+PullToLoad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		4E64BF3819363D24000E268E /* YLPullToLoadDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLPullToLoadDemoTests-Info.plist"; sourceTree = "<group>"; };
 		4E64BF3A19363D24000E268E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E64BF3C19363D24000E268E /* YLPullToLoadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPullToLoadDemoTests.m; sourceTree = "<group>"; };
+		4EBD12ED1937864A00149034 /* UIScrollView+PullToLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+PullToLoad.h"; path = "../YLPullToLoad/UIScrollView+PullToLoad.h"; sourceTree = "<group>"; };
+		4EBD12EE1937864A00149034 /* UIScrollView+PullToLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+PullToLoad.m"; path = "../YLPullToLoad/UIScrollView+PullToLoad.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		4E64BF0219363D24000E268E = {
 			isa = PBXGroup;
 			children = (
+				4EBD12EC1937860800149034 /* YLPullToLoad */,
 				4E64BF1419363D24000E268E /* YLPullToLoadDemo */,
 				4E64BF3619363D24000E268E /* YLPullToLoadDemoTests */,
 				4E64BF0D19363D24000E268E /* Frameworks */,
@@ -153,6 +158,15 @@
 				4E64BF3919363D24000E268E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EBD12EC1937860800149034 /* YLPullToLoad */ = {
+			isa = PBXGroup;
+			children = (
+				4EBD12ED1937864A00149034 /* UIScrollView+PullToLoad.h */,
+				4EBD12EE1937864A00149034 /* UIScrollView+PullToLoad.m */,
+			);
+			name = YLPullToLoad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +270,7 @@
 				4E64BF2819363D24000E268E /* ViewController.m in Sources */,
 				4E64BF1F19363D24000E268E /* AppDelegate.m in Sources */,
 				4E64BF1B19363D24000E268E /* main.m in Sources */,
+				4EBD12EF1937864A00149034 /* UIScrollView+PullToLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E64BF3D19363D24000E268E /* YLPullToLoadDemoTests.m in Sources */,
+				4EBD12F01937864A00149034 /* UIScrollView+PullToLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +490,7 @@
 				4E64BF4219363D24000E268E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E64BF4319363D24000E268E /* Build configuration list for PBXNativeTarget "YLPullToLoadDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +499,7 @@
 				4E64BF4519363D24000E268E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIScrollView+PullToLoad.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:scrollView];
+    [scrollView setShowPullToLoadView];
 }
 
 - (void)didReceiveMemoryWarning
